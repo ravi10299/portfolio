@@ -1,5 +1,6 @@
+
 :root{
-    --main-color:#4C84FF;
+    --main-color:#350ee0bd;
     --primary-bg-color:#fff;
     --secondary-bg-color:#eee;
     --primary-text-color:#222;
@@ -46,16 +47,26 @@ body{
 
 body.dark-theme{
     --primary-bg-color:#252C48;
-    --secondary-bg-color:#171C32;
+    --secondary-bg-color:#22306e;
     --primary-text-color:#fff;
     --secondary-text-color:#eee;
 }
 
+.ravi08:hover {
+    
+    transform: scale(1); /* Zoom in on hover */
+  }
+  
+  .ravi08:not(:hover) {
+    
+    transform: scale(0.9); /* Zoom out when not hovered */
+  }
 section{
     min-height: 100vh;
     padding:1rem;
     padding:0 8%;
 }
+
 
 .btn{
     display: inline-block;
@@ -269,7 +280,7 @@ section{
 }
 
 .about .row .box:nth-child(1) .progress:nth-child(5) .bar span{
-    width: 75%;
+    width: 55%;
 }
 
 .about .row .box:nth-child(2) .progress:nth-child(2) .bar span{
@@ -281,11 +292,11 @@ section{
 }
 
 .about .row .box:nth-child(2) .progress:nth-child(4) .bar span{
-    width: 55%;
+    width: 65%;
 }
 
 .about .row .box:nth-child(2) .progress:nth-child(5) .bar span{
-    width: 60%;
+    width: 20%;
 }
 
 .about .row .box .exp-box{
