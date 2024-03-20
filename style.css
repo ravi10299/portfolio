@@ -1,10 +1,31 @@
 
 :root{
     --main-color:#350ee0bd;
-    --primary-bg-color:#fff;
+    /* --primary-bg-color:#696969; */
+
     --secondary-bg-color:#eee;
     --primary-text-color:#222;
     --secondary-text-color:#666;
+    
+    --primary-bg-color{
+            background: linear-gradient(248deg,#345caf,#604a43,#5f86db,#24d718,#222af8,white);
+            background-size: 360% 360%;
+            animation: gradient-animation 18s ease infinite;
+          }
+          
+          @keyframes gradient-animation {
+            0% {
+              background-position: 0% 50%;
+            }
+            50% {
+              background-position: 100% 50%;
+            }
+            100% {
+              background-position: 0% 50%;
+            }
+          }
+    
+    
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
@@ -41,13 +62,35 @@ html::-webkit-scrollbar-thumb{
     background-color: var(--main-color);
 }
 
-body{
-    background:var(--secondary-bg-color);
-}
+
+    
+    body{
+
+        /* background:var(--secondary-bg-color); */
+    /* background: conic-gradient(from 45deg, red, orange 50%, yellow 85%, green); */
+        background: linear-gradient(248deg,#345caf,#e7e40c,#5f86db,#24d718,#222af8,white);
+        background-size: 360% 360%;
+        animation: gradient-animation 18s ease infinite;
+      }
+      
+      @keyframes gradient-animation {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+
 
 body.dark-theme{
-    --primary-bg-color:#252C48;
-    --secondary-bg-color:#22306e;
+    background-image: repeating-linear-gradient(rgb(15, 15, 15), rgb(5, 5, 5), rgb(28, 29, 28));
+
+    --primary-bg-color: #696969;
+    --secondary-bg-color:#DCDCDC	;
     --primary-text-color:#fff;
     --secondary-text-color:#eee;
 }
